@@ -6,9 +6,15 @@ body {
   color: #777;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: #E8F6E8;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
   line-height: 1.4;
   font-weight: 700;
@@ -24,7 +30,8 @@ h3 {
   margin: 0px auto;
 }
 
-a,a:hover {
+a,
+a:hover {
   color: #cc580c;
   text-decoration: none;
 }
@@ -32,7 +39,7 @@ a,a:hover {
 img {
   max-width: 100%;
 }
- 
+
 
 /********************************/
 /*       Fade Bs-carousel       */
@@ -47,17 +54,17 @@ img {
   height: 100vh;
 }
 
-.fade-carousel .carousel-indicators > li {
+.fade-carousel .carousel-indicators>li {
   margin: 0 2px;
-  background-color: #f39c12;
-  border-color: #f39c12;
+  background-color: #B4E0B4;
+  border-color: #B4E0B4;
   opacity: .7;
   border-radius: 0;
   width: 20px;
   height: 8px;
 }
 
-.fade-carousel .carousel-indicators > li.active {
+.fade-carousel .carousel-indicators>li.active {
   width: 10px;
   height: 10px;
   opacity: 1;
@@ -74,12 +81,13 @@ img {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-  -webkit-transform: translate3d(-50%,-50%,0);
-  -moz-transform: translate3d(-50%,-50%,0);
-  -ms-transform: translate3d(-50%,-50%,0);
-  -o-transform: translate3d(-50%,-50%,0);
-  transform: translate3d(-50%,-50%,0);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background-color: rgba(0, 102, 0, 0.6);
 }
 
 .hero h1 {
@@ -114,16 +122,20 @@ img {
   transition: 2s all ease-in-out .1s;
 }
 
-.btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus {
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
   color: #f5f5f5;
-  background-color: #DB8B0F;
-  border-color: #DB8B0F;
+  background-color: #4CAF50;
+  /* Alterado de laranja para verde */
+  border-color: #45A049;
   outline: none;
   padding: 12px 32px;
   margin: 20px auto;
   border-radius: 0px;
-  border-bottom: 4px solid #FF9C00;
+  border-bottom: 4px solid #45A049;
 }
+
 /********************************/
 /*            Overlay           */
 /********************************/
@@ -132,15 +144,15 @@ img {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: #080d15;
+  background-color: rgba(8, 13, 21, 0.7);
   opacity: .7;
 }
- 
+
 
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
-.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
   height: 100vh;
@@ -177,14 +189,17 @@ img {
   text-shadow: none;
   margin-top: 30px;
 }
+
 /* Previous button  */
 #quote-carousel .carousel-control.left {
   left: -12px;
 }
+
 /* Next button  */
 #quote-carousel .carousel-control.right {
   right: -12px !important;
 }
+
 /* Changes the position of the indicators */
 #quote-carousel .carousel-indicators {
   right: 50%;
@@ -192,6 +207,7 @@ img {
   bottom: 0px;
   margin-right: -19px;
 }
+
 /* Changes the color of the indicators */
 #quote-carousel .carousel-indicators li {
   background: #FFFFFF;
@@ -207,6 +223,7 @@ img {
   border-radius: 0px;
   border: 4px solid rgba(237, 202, 24, 0.18);
 }
+
 /* End carousel */
 
 .item blockquote {
@@ -260,6 +277,7 @@ img {
   padding: 0 0 15px 0;
   margin: 0;
 }
+
 /*-------Menu----------*/
 .isFixed {
   left: 0px;
@@ -270,15 +288,16 @@ img {
   margin-top: 0px;
   position: absolute;
   z-index: 999;
-	 /* margin-top:20px; */
+  /* margin-top:20px; */
   left: 0px;
   right: 0px;
-	 /* bottom:0; */;
+  /* bottom:0; */
+  ;
 }
 
 /*.navArea {
-	float:right;;
-}*/
+      float:right;;
+  }*/
 
 .navwrapper .container {
   padding: 0;
@@ -309,7 +328,8 @@ img {
   background: #fff;
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
+.nav>li>a:hover,
+.nav>li>a:focus {
   text-decoration: none;
   background-color: rgb(205, 128, 5);
   color: #FFFFFF;
@@ -322,7 +342,8 @@ img {
   font-size: 17px;
   font-weight: 500;
   font-family: 'Droid Sans', sans-serif;
-} 
+}
+
 .navbar-wrapper {
   margin-top: 0px;
   height: 65px;
@@ -347,7 +368,7 @@ img {
   background: none;
   color: #c3c8d6;
   border: none;
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -365,7 +386,8 @@ img {
   color: #fff;
 }
 
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus {
   background: none;
   color: #fff !important;
 }
@@ -383,13 +405,14 @@ img {
   display: none;
 }
 
-.isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
-  background: #cc580c;
+.isFixed .navbar-inverse .navbar-nav>.active>a,
+.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
+  background: #4CAF50;
   color: #fff;
 }
 
 .isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
-  background: #cc580c;
+  background: #4CAF50;
   color: #fff;
 }
 
@@ -413,19 +436,20 @@ img {
   -moz-transition: all .5s;
   -webkit-transition: all .5s;
   transition: all .5s;
-} 
+}
 
 
 /*------Intro----------*/
 /*header {
-}*/
+  }*/
 
 .intro {
   font-size: 60px;
   line-height: 1.0;
   font-weight: 900;
   color: #fff;
-} 
+}
+
 /*-----------Heading-------------*/
 .heading {
   padding-bottom: 15px;
@@ -455,8 +479,8 @@ img {
 img#site-title {
   max-width: 150px;
 }
- 
- 
+
+
 /*------- 	Gallery Events-------------*/
 /* General style */
 .grid-gallery ul {
@@ -486,6 +510,7 @@ img#site-title {
   margin: 0;
   font-size: 12px;
 }
+
 /* Grid style */
 .grid-wrap {
   margin: 0 auto;
@@ -516,10 +541,11 @@ img#site-title {
   padding: 12px 18px;
   border-top: #F39C12 solid 1px;
 }
+
 /* Slideshow style */
 .slideshow {
   position: fixed;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
@@ -530,8 +556,8 @@ img#site-title {
   overflow: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  -webkit-transition: opacity 0.5s,visibility 0s 0.5s;
-  transition: opacity 0.5s,visibility 0s 0.5s;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
 .slideshow-open .slideshow {
@@ -546,8 +572,8 @@ img#site-title {
   height: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: translate3d(0,0,150px);
-  transform: translate3d(0,0,150px);
+  -webkit-transform: translate3d(0, 0, 150px);
+  transform: translate3d(0, 0, 150px);
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
@@ -558,8 +584,8 @@ img#site-title {
 }
 
 .slideshow-open .slideshow ul {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .slideshow li {
@@ -583,7 +609,7 @@ img#site-title {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -591,8 +617,8 @@ img#site-title {
 .slideshow li.current:after {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s,visibility 0s 0.3s;
-  transition: opacity 0.3s,visibility 0s 0.3s;
+  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+  transition: opacity 0.3s, visibility 0s 0.3s;
 }
 
 .slideshow figure {
@@ -615,6 +641,7 @@ img#site-title {
   font-size: 23px;
   padding-bottom: 10px;
 }
+
 /* Navigation */
 .slideshow nav span {
   position: fixed;
@@ -624,10 +651,11 @@ img#site-title {
   padding: 2%;
   cursor: pointer;
   font-size: 2.2em;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.slideshow nav span.nav-prev,.slideshow nav span.nav-next {
+.slideshow nav span.nav-prev,
+.slideshow nav span.nav-next {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -644,7 +672,8 @@ img#site-title {
   color: #999;
 }
 
-.icon:before,.icon:after {
+.icon:before,
+.icon:after {
   font-family: 'fontawesome';
   speak-as: none;
   font-style: normal;
@@ -667,6 +696,7 @@ span.nav-next:before {
 span.nav-close:before {
   content: "\f00d";
 }
+
 /* Info on arrow key navigation */
 .info-keys {
   position: fixed;
@@ -681,7 +711,8 @@ span.nav-close:before {
   text-align: center;
 }
 
-.info-keys:before,.info-keys:after {
+.info-keys:before,
+.info-keys:after {
   position: absolute;
   top: 0;
   width: 16px;
@@ -728,8 +759,8 @@ textarea.contact {
 }
 
 .contact.submit {
-  background: #F39C12;
-  font-family: 'Montserrat',sans-serif;
+  background: #12f31d;
+  font-family: 'Montserrat', sans-serif;
   color: #1A1A1A;
   font-size: 16px;
   font-weight: 400;
@@ -749,19 +780,22 @@ textarea.contact {
   display: none;
 }
 
-.error input,input.error,.error textarea,textarea.error {
+.error input,
+input.error,
+.error textarea,
+textarea.error {
   background-color: #ffffff;
   border: 1px solid red !Important;
-  -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s,box-shadow linear 0.2s;
-  transition: border linear 0.2s,box-shadow linear 0.2s;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 
 
 /*----------------------------------------------------	 8. Footer Style------------------------------------------------------*/
 .footer {
-  background: #270B00;
+  background: #0A2F0A;
   position: relative;
 }
 
@@ -781,7 +815,7 @@ textarea.contact {
 .footer ul li {
   display: inline-block;
   text-align: center;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   line-height: 45px;
   margin: 0 4px 0px;
@@ -792,10 +826,10 @@ textarea.contact {
 }
 
 .footer ul li:hover {
-  background: #5A230E;
+  background: #064C06;
 }
 
-.footer ul li:hover	a {
+.footer ul li:hover a {
   color: #fff;
 }
 
@@ -826,18 +860,19 @@ textarea.contact {
   background: #3F3F3F;
   position: absolute;
   margin-left: -30px;
-	/* top:-35px; */
+  /* top:-35px; */
   border-radius: 0;
   bottom: 14px;
   right: 0px;
 }
 
 .gototop i {
-  color: #F39C12;
+  color: #3F3F3F;
   line-height: 40px;
 }
 
-.footer a,.footer a:hover {
+.footer a,
+.footer a:hover {
   color: #fff;
 }
 
@@ -891,16 +926,18 @@ blockquote cite:before {
   font-size: 15px;
 }
 
-blockquote footer, blockquote small, blockquote .small {
+blockquote footer,
+blockquote small,
+blockquote .small {
   color: #fff;
   font-size: 14px;
 }
 
 /* Header Styles
----------------------------------*/
+  ---------------------------------*/
 
 #header_wrapper {
-  background: #0A1525;
+  background: #033A03;
   padding: 15px 0px;
   box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
   position: relative;
@@ -908,7 +945,8 @@ blockquote footer, blockquote small, blockquote .small {
 
 .header_box {
   position: relative;
-    /* z-index: 9999999999999999999999999999999999; */;
+  /* z-index: 9999999999999999999999999999999999; */
+  ;
 }
 
 .logo a {
@@ -924,64 +962,11 @@ blockquote footer, blockquote small, blockquote .small {
 
 .page-section {
   padding: 80px 0;
-}	
-
-/**
-  CONTACT
---------------------------------*/ 
-#contact-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#contact-form label.checkbox-label {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#contact-form input[type="checkbox"] {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-#contact-form button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px; /* Adicionei margem superior para separar do checklist */
-}
-
-#contact-form button:hover {
-  background-color: #555;
-}
-
-/* Style messages */
-.message {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: none;
-  text-align: center;
 }
 
 /**
-  MEDIA QUERIES
---------------------------------*/ 
+    MEDIA QUERIES
+  --------------------------------*/
 @media screen and (min-width: 980px) {
   .hero {
     width: 980px;
@@ -989,25 +974,9 @@ blockquote footer, blockquote small, blockquote .small {
 }
 
 @media (max-width: 768px) {
+
   #quote-carousel .carousel-indicators {
     bottom: -20px !important;
-  }
-
-  #contact-form label,
-  #contact-form input[type="text"],
-  #contact-form input[type="email"],
-  #contact-form input[type="tel"],
-  #contact-form textarea,
-  #contact-form button {
-    width: 100%;
-  }
-  
-  #contact-form input[type="tel"] {
-    margin-top: 10px;
-  }
-
-  #contact-form button {
-    margin-top: 10px;
   }
 
   #quote-carousel .carousel-indicators li {
@@ -1030,7 +999,8 @@ blockquote footer, blockquote small, blockquote .small {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width:960px) {
+
   .grid li {
     width: 33.3%;
   }
@@ -1060,7 +1030,7 @@ blockquote footer, blockquote small, blockquote .small {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
   input.contact.col-md-6 {
     width: 48.5%;
   }
@@ -1071,7 +1041,8 @@ blockquote footer, blockquote small, blockquote .small {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+
   #main-nav {
     background: #F39C12;
   }
@@ -1109,33 +1080,14 @@ blockquote footer, blockquote small, blockquote .small {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width:560px) {
   .grid li {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width:384px) {
   .grid li {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #contact-form label,
-  #contact-form input[type="text"],
-  #contact-form input[type="email"],
-  #contact-form input[type="tel"],
-  #contact-form textarea,
-  #contact-form button {
-    width: 100%;
-  }
-  
-  #contact-form input[type="tel"] {
-    margin-top: 10px;
-  }
-
-  #contact-form button {
-    margin-top: 10px;
   }
 }

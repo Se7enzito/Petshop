@@ -25,7 +25,7 @@ h3 {
 }
 
 a,a:hover {
-  color: rgb(5, 205, 22);
+  color: #cc580c;
   text-decoration: none;
 }
 
@@ -49,8 +49,8 @@ img {
 
 .fade-carousel .carousel-indicators > li {
   margin: 0 2px;
-  background-color: rgb(0, 139, 12);
-  border-color: rgb(0, 255, 21);
+  background-color: #f39c12;
+  border-color: #f39c12;
   opacity: .7;
   border-radius: 0;
   width: 20px;
@@ -116,13 +116,13 @@ img {
 
 .btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus {
   color: #f5f5f5;
-  background-color: rgb(5, 205, 22);
-  border-color:rgb(5, 205, 22);
+  background-color: #DB8B0F;
+  border-color: #DB8B0F;
   outline: none;
   padding: 12px 32px;
   margin: 20px auto;
   border-radius: 0px;
-  border-bottom: 4px solid rgb(5, 205, 22);
+  border-bottom: 4px solid #FF9C00;
 }
 /********************************/
 /*            Overlay           */
@@ -198,7 +198,7 @@ img {
 }
 
 #quote-carousel .carousel-indicators .active {
-  background: rgb(5, 205, 22);
+  background: #F39C12;
 }
 
 #quote-carousel img {
@@ -231,12 +231,12 @@ img {
   background: #F0F0F0;
   border-bottom: 10px solid #E2E2E2;
   border-radius: 0 0 15px 15px;
-  border-top: 1px solid rgb(5, 205, 22);
+  border-top: 1px solid #F39C12;
 }
 
 .box-area-icon i {
   font-size: 40px;
-  color: rgb(5, 205, 22);
+  color: #F39C12;
 }
 
 .news-events-box {
@@ -311,7 +311,7 @@ img {
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
-  background-color: rgb(5, 205, 22);
+  background-color: rgb(205, 128, 5);
   color: #FFFFFF;
 }
 
@@ -376,7 +376,7 @@ img {
 
 #main-nav ul.nav>li.active>a {
   color: #fff;
-  background-color: rgb(5, 205, 22);
+  background-color: rgb(205, 128, 5);
 }
 
 .hideClass {
@@ -403,11 +403,11 @@ img {
   -moz-transition: all .5s;
   -webkit-transition: all .5s;
   transition: all .5s;
-  background: rgb(5, 205, 22);
+  background: #F39C12;
 }
 
 .isFixed {
-  background: rgb(5, 205, 22);
+  background: #F39C12;
   -o-transition: all .5s;
   -ms-transition: all .5s;
   -moz-transition: all .5s;

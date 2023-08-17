@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <title>Melhor Amigo</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <!--Javascripts-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("kC98t-ULqpEAMZNxn");
+    })();
+  </script>
+  <script src="js/product.js"></script>
+  <script src="js/contact.js"></script>
+
+  <!-- <script type="text/javascript">
+    jQuery(function ($) {
+      $(document).ready(function () {
+        $('.navbar-wrapper').stickUp();
+      });
+    });
+  </script> -->
+
+  <script>
+    jQuery(function ($) {
+      // Declaração da variável vartop
+      var vartop = 0;
+
+      $(document).ready(function () {
+        // Resto do seu código
+
+        $.fn.stickUp = function (options) {
+          // Resto do seu código
+
+          // Definindo corretamente a variável vartop
+          vartop = parseInt($(this).offset().top);
+        }
+
+        $(document).on('scroll', function () {
+          varscroll = parseInt($(document).scrollTop());
+
+          // Resto do seu código
+        });
+      });
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <!--wrapper start-->
+  <div class="wrapper">
+    <!--header-->
+    <header id="header">
+      <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+              <hgroup>
+                <img src="img/icon.png" alt="logo" height="100px" width="100px" />
+                <h1>O melhor para seu pet</h1>
+                <h3>Conheça nossos produtos: limpeza, tosa e venda de ração</h3>
+              </hgroup>
+              <a class="btn btn-hero btn-lg" href="#service">Serviços</a>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+              <hgroup>
+                <img src="img/icon.png" alt="logo" height="100px" width="100px" />
+                <h1>O local mais cuidadoso</h1>
+                <h3>Seu pet vai ter todo cuidado do mundo aqui</h3>
+              </hgroup>
+              <a class="btn btn-hero btn-lg" href="#service">Serviços</a>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+              <hgroup>
+                <img src="img/icon.png" alt="logo" height="100px" width="100px" />
+                <h1>O melhor local do mundo</h1>
+                <h3>Somos o melhor local do mundo para os pets</h3>
+              </hgroup>
+              <a class="btn btn-hero btn-lg" href="#service">Serviços</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <nav class="navbar navbar-wrapper">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#main-nav"> <span class="sr-only">Navegação</span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              </div>
+              <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#header" class="scroll-link">Home</a></li>
+                  <li><a href="#aboutUs" class="scroll-link">Sobre Nós</a></li>
+                  <li><a href="#service" class="scroll-link">Serviços</a></li>
+                  <li><a href="#gallery" class="scroll-link">Galeria</a></li>
+                  <li><a href="#contact" class="scroll-link">Contato</a></li>
+                  <li><a href="#feedback" class="scroll-link">Feedback</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <!--about us-->
+    <section class="aboutus page-section" id="aboutUs">
+      <div class="container">
+        <div class="heading">
+          <h2>Quem somos?</h2>
+          <h3>Voocê deve estar se perguntando quem somos, não é mesmo? Deixar seu melhor amigo com alguém não é trabalho
+            fácil.</h3>
+          <!--<img src="img/logo2.png" alt="Logo com nome escrito">-->
+        </div>
+        <div class="content">
+          <p>Bem-vindo ao Petshop "Melhor Amigo"!<br>
+            No Petshop "Melhor Amigo", nós entendemos que seu animal de estimação é
+            mais do que apenas um bichinho, é um membro especial da sua família. Com
+            isso em mente, estamos comprometidos em fornecer cuidados excepcionais e
+            serviços de alta qualidade para garantir que seu melhor amigo tenha uma vida
+            feliz e saudável.<br>
+            Com uma equipe dedicada e apaixonada por animais, nossos profissionais
+            treinados estão prontos para oferecer os melhores cuidados para o seu pet.
+            Desde serviços de tosa profissional, onde deixaremos seu animalzinho com um
+            visual impecável, até a limpeza e higienização completa, proporcionamos um
+            ambiente seguro e tranquilo para que seu amigo se sinta confortável durante
+            todo o processo.<br>
+            Sabemos que a alimentação é fundamental para a saúde do seu pet, por isso
+            oferecemos uma ampla variedade de rações de alta qualidade e alimentos
+            balanceados, adaptados às necessidades individuais de cada animal. Nossos
+            especialistas estão disponíveis para fornecer orientação personalizada e ajudálo a escolher a melhor opção
+            para o seu amiguinho.<br>
+            No Petshop "Melhor Amigo", também acreditamos na importância da
+            socialização e diversão para o bem-estar dos animais. Por isso, oferecemos
+            momentos especiais de brincadeiras e interação em nosso espaço dedicado,
+            garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma
+            ampla variedade de brinquedos e acessórios para enriquecer a vida do seu
+            animalzinho.<br>
+            Nossa galeria de fotos é o reflexo do nosso amor e cuidado pelos animais. Lá,
+            você poderá ver alguns dos adoráveis clientes que já passaram pelo nosso
+            petshop. É um verdadeiro prazer atender a cada um deles e contribuir para o
+            seu bem-estar e felicidade.<br>
+            Estamos ansiosos para conhecê-lo e ao seu melhor amigo! Visite-nos no
+            Petshop "Melhor Amigo" e descubra a diferença que fazemos na vida dos
+            animais de estimação. Entre em contato conosco por telefone, e-mail ou através
+            do nosso formulário de contato no nosso site. Seu pet merece o melhor, e nós
+            estamos aqui para fornecer exatamente isso. Confie no Petshop "Melhor
+            Amigo" para cuidar do seu melhor amigo como se fosse nosso próprio</p>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+    <section class="service page-section" id="service">
+      <div class="container text-center">
+        <div class="heading">
+          <h2>Serviços</h2>
+          <h3>Aqui seu pet vai receber toda atenção, cuidado e carinho do mundo.</h3>
+        </div>
+        <div class="row">
+          <div class="heading">
+            <h2>Banho</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/banho.jpg">
+                </div>
+                <h3>Banho Relaxante</h3>
+                <div class="box-area-text">No Petshop "Melhor Amigo", oferecemos banhos
+                  relaxantes para cães e gatos. Utilizamos produtos de qualidade, seguros
+                  e adequados para cada tipo de pelagem, garantindo uma limpeza
+                  profunda e refrescante. Nossos profissionais carinhosos proporcionam
+                  um ambiente tranquilo e seguro para que seu pet desfrute de um banho
+                  agradável, deixando-o com uma pelagem macia, brilhante e cheirosa.<br><br>R$ 30,00
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/banho-tosa.png">
+                </div>
+                <h3>Banho</h3>
+                <div class="box-area-text">Traga seu melhor amigo para tomar aquele banho e também trocar seu corte de
+                  pelo.<br><br>R$ 50,00</div>
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <h2>Tosa</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/tosa.jpg">
+                </div>
+                <h3>Tosa</h3>
+                <div class="box-area-text">Proporcionamos serviços profissionais de
+                  tosa para cães de todas as raças. Nossos tosadores experientes e
+                  qualificados utilizam técnicas avançadas para garantir que seu pet tenha
+                  um visual impecável. Além de cortes de pelos personalizados, também
+                  realizamos higienização e cuidados especiais, como limpeza de ouvidos e
+                  corte de unhas, deixando seu cãozinho limpo e bem cuidado.<br><br>R$
+                  25,00
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/penteado.png">
+                </div>
+                <h3>Penteado</h3>
+                <div class="box-area-text">Traga seu melhor amigo para dar aquele toque no visual.<br><br>R$ 15,00</div>
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <h2>Venda de Ração</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/racao.png">
+                </div>
+                <h3>Ração Premium</h3>
+                <div class="box-area-text">No Petshop "Melhor Amigo", oferecemos uma seleção
+                  de rações premium para cães e gatos. Essas rações são formuladas com
+                  ingredientes de alta qualidade, garantindo uma nutrição balanceada e
+                  adequada para o seu pet. Temos opções para diferentes idades, raças e
+                  necessidades específicas, proporcionando uma dieta saudável e saborosa
+                  para o seu melhor amigo.<br><br>R$ 100,00
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/atividades.jpg">
+                </div>
+                <h3>Brinquedos Interativos</h3>
+                <div class="box-area-text">Valorizamos o enriquecimento e a diversão dos
+                  animais, por isso oferecemos uma variedade de brinquedos interativos.
+                  Esses brinquedos estimulam a mente e o corpo do seu pet, promovendo
+                  o exercício físico e mental. Desde brinquedos de mastigação duráveis até
+                  jogos interativos, temos opções para cães e gatos de todos os tamanhos
+                  e idades, garantindo horas de entretenimento e diversão saudável.<br><br>R$ 40,00/Dia</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-area">
+                <div class="box-area-icon">
+                  <img src="img/slide2.jpg">
+                </div>
+                <h3>Produtos de Higiene e Cuidados</h3>
+                <div class="box-area-text">Na nossa seleção de produtos, você
+                  encontrará uma gama de itens de higiene e cuidados para o seu pet. Isso
+                  inclui shampoos e condicionadores específicos para diferentes tipos de
+                  pelagem, escovas e pentes para manter os pelos desembaraçados e
+                  saudáveis, produtos de limpeza auricular e ocular, além de acessórios
+                  essenciais como coleiras, guias e comedouros. Tudo o que você precisa
+                  para manter seu animalzinho limpo, confortável e bem cuidado.<br><br>R$ 40,00/Dia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p>Esses são apenas alguns dos produtos disponíveis no Petshop "Melhor Amigo".
+            Temos um catálogo completo e diversificado, cuidadosamente selecionado para
+            atender às necessidades dos animais de estimação. Nossa equipe terá prazer
+            em orientá-lo e ajudá-lo a escolher os melhores produtos para o seu amiguinho
+            de quatro patas.</p>
+
+          <div class="heading">
+            <h2>Pedir produtos / Informações de Produtos</h2>
+          </div>
+
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-control" id="name" placeholder="Escreva seu nome." />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-control" id="email" placeholder="Escreva seu e-mail." />
+          </div>
+          <div class="form-group">
+            <h5 class="phone">Telefone</h5>
+            <input type="phone" class="form-control" id="phone" placeholder="Escreva seu telefone.">
+          </div>
+          <div class="form-group">
+            <h5 class="newsletter">Produtos</h5>
+            <input type="text" class="form-control" id="product" placeholder="Escreva o produto que você quer." />
+            <!--<div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption1">Banho Relaxante</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption2">Banho</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption3">Tosa</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption1">Penteado</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption2">Ração Premium</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="product">
+                <label class="form-check-label" for="newsletterOption3">Brinquedos Interativos</label>
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="product">
+              <label class="form-check-label" for="newsletterOption3">Produtos de Higine e Cuidado</label>
+            </div>-->
+          </div>
+          <button class="btn btn-primary" onclick="sendProduct()">Enviar</button>
+          <div class="message"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--gallery-->
+    <section class="gallery page-section" id="gallery">
+      <div class="container">
+        <div class="heading">
+          <h2>Galeria</h2>
+          <h3>Veja imagens de nossos profissionais e de alguns serviços.</h3>
+        </div>
+
+        <div id="grid-gallery" class="grid-gallery">
+
+          <section class="grid-wrap">
+            <ul class="grid">
+              <li class="grid-sizer"></li><!-- for Masonry column width -->
+              <li>
+                <figure>
+                  <img src="img/atividades.jpg" />
+                  <figcaption>
+                    <h3>Atividades no Hotel</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto1.jpg">
+                  <figcaption>
+                    <h3>Hum... Hora do banho</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto2.jpg" />
+                  <figcaption>
+                    <h3>Hum... Refeição</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto3.jpg" />
+                  <figcaption>
+                    <h3>Comidaaaaa! Atacar!</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/equipe.png" />
+                  <figcaption>
+                    <h3>Nossa Equipe!</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/veterinario.jpg" />
+                  <figcaption>
+                    <h3>Nosso Veterinario.</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/massagem.jpg" />
+                  <figcaption>
+                    <h3>Que gostosooo...</h3>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/hotel.jpg" />
+                  <figcaption>
+                    <h3>Amiguinhos</h3>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </section><!-- // end small images -->
+
+          <section class="slideshow">
+            <ul>
+              <li>
+                <figure>
+                  <img src="img/atividades.jpg" alt="" />
+                  <figcaption>
+                    <h3>Atividades no Hotel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto1.jpg" alt="" />
+                  <figcaption>
+                    <h3>Hum... Hora do banho</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto2.jpg" alt="" />
+                  <figcaption>
+                    <h3>Hum... Refeição</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/foto3.jpg" alt="" />
+                  <figcaption>
+                    <h3>Comidaaaaaa! Atacar!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/equipe.png" alt="" />
+                  <figcaption>
+                    <h3>Nossa Equipe!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/veterinario.jpg" alt="" />
+                  <figcaption>
+                    <h3>Nosso Veterinario.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <img src="img/massagem.jpg" alt="" />
+                  <figcaption>
+                    <h3>Que gostosooo...</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <img src="img/hotel.jpg" alt="" />
+                  <figcaption>
+                    <h3>Amiguinhos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem
+                      sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <nav>
+              <span class="icon nav-prev"></span>
+              <span class="icon nav-next"></span>
+              <span class="icon nav-close"></span>
+            </nav>
+
+          </section><!-- // end slideshow -->
+
+        </div><!-- // grid-gallery -->
+      </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact page-section" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contatos</h2>
+
+          <h3></h3>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-control" id="name" placeholder="Escreva seu nome" />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-control" id="email" placeholder="Escreva seu e-mail" />
+          </div>
+          <div class="form-group">
+            <h5 class="phone">Telefone</h5>
+            <input type="phone" class="form-control" id="phone" placeholder="Escreva seu telefone">
+          </div>
+          <div class="form-group">
+            <h5 class="newsletter">Newsletter (Receber atualizações e promoções por e-mail)</h5>
+            <input type="checkbox" class="form-control" id="newsletter"
+              placeholder="Caso queira receber ambos: Sim / Caso somente um escreva o nome de o que quer receber">
+          </div>
+          <!--<div class="form-group">
+            <h5 class="newsletter">Newsletter (Receber atualizações e promoções por e-mail)</h5>
+            <input type="text" class="form-control" id="newsletter" placeholder="Caso queira receber ambos: Sim / Caso somente um escreva o nome de o que quer receber">
+          </div>-->
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Enviar</button>
+          <div class="message"></div>
+        </div>
+      </div>
+      <div class="heading">
+        <h2>Onde nos encontrar?</h2>
+        <h4>Rua Teste, 1234, Bairro Teste, Belo Horizonte, Minas Gerais</h4>
+        <h3>Telefone: (31) 99999-9999</h3>
+        <h3>E-Mail: melhoramigopetshop@gmail.com</h3>
+      </div>
+  </div>
+  </section>
+
+  <!--feedback-->
+  <section class="feedback page-section" id="feedback">
+    <div class="container">
+      <div class="heading">
+
+        <h2>Feedback</h2>
+
+        <h3>O que nossos clientes falam?</h3>
+      </div>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#quote-carousel" data-slide-to="1"></li>
+              <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner">
+
+              <!-- Quote 1 -->
+              <div class="item active">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="img/rosto1.jpg" style="width: 100px;height:100px;">
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Melhor equipe do mundo!!!</p>
+                      <small>Fabiane</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 2 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="img/rosto2.jpg" style="width: 100px;height:100px;">
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Eu e meu pet amamos, amei como ele foi tratado e ele amou por ser tratado como um rei.</p>
+                      <small>Luiz</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 3 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="img/rosto3.jpg" style="width: 100px;height:100px;">
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Melhor serviço que meu pet ja teve.</p>
+                      <small>Luisa</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--footer-->
+  <section class="footer" id="footer">
+    <p class="text-center">
+      <a href="#header" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+    </p>
+    <div class="container">
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+      </ul>
+      <p>2023 Todos seus direitos reservados</p>
+    </div>
+  </section>
+
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-scrolltofixed.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/menustick.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/masonry.js"></script>
+  <script src="js/imgloaded.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/colorfinder.js"></script>
+  <script src="js/gridscroll.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
